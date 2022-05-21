@@ -17,7 +17,7 @@ app.post('/login',async(req,res)=>{
     const email=req.body.email
     const params={
         email,
-        login.magicLinks
+        login
 
     }
     const response =await client.magicLinks.email.loginOrCreate()
